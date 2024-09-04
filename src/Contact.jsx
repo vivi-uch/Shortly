@@ -42,22 +42,24 @@ export default function Contact() {
     },
   ];
   return (
-    <div className="flex bg-Very-Dark-Violet px-52 py-20 mb-0 justify-between cursor-pointer">
+    <div className="flex bg-Very-Dark-Violet px-32 py-12 mb-0 justify-between cursor-pointer">
       <div>
-        <h1 className="text-[60px] font-bold text-white p-0">Shortly</h1>
+        <h1 className="text-[40px] font-bold text-white p-0">Shortly</h1>
       </div>
-      {cardList.map((card) => (
-        <FooterCard
-          heading={card.heading}
-          text1={card.text1}
-          text2={card.text2}
-          text3={card.text3}
-          text4={card.text4}
-        />
-      ))}
-      <div className="flex gap-16">
+      <div className="flex gap-20">
+        {cardList.map((card) => (
+          <FooterCard
+            heading={card.heading}
+            text1={card.text1}
+            text2={card.text2}
+            text3={card.text3}
+            text4={card.text4}
+          />
+        ))}
+      </div>
+      <div className="flex gap-4">
         {contactimag.map((logo) => (
-          <img src={logo.src} alt={logo.name} className="w-8 h-8 font-bold" />
+          <img src={logo.src} alt={logo.name} className="w-4 h-4 font-bold" />
         ))}
       </div>
     </div>
@@ -66,12 +68,12 @@ export default function Contact() {
 
 function FooterCard({ heading, text1, text2, text3, text4 }) {
   return (
-    <div className="flex flex-col gap-3">
-      <h3 className="mb-4 text-white text-2xl font-bold">{heading}</h3>
-      <p className="text-gray-custom text-xl">{text1}</p>
-      <p className="text-gray-custom text-xl">{text2}</p>
-      <p className="text-gray-custom text-xl">{text3}</p>
-      <p className="text-gray-custom text-xl">{text4}</p>
+    <div className="flex flex-col gap-1">
+      <h3 className="mb-4 text-white text-xl font-bold">{heading}</h3>
+      <p className="text-gray-custom text-lg">{text1}</p>
+      <p className="text-gray-custom text-lg">{text2}</p>
+      <p className="text-gray-custom text-lg">{text3}</p>
+      <p className="text-gray-custom text-lg">{text4}</p>
     </div>
   );
 }

@@ -5,12 +5,12 @@ export default function Heading() {
   return (
     <>
       <Nav />
-      <div className="grid grid-cols-2 mt-40 mb-4">
-        <div className="flex flex-col ml-52">
-          <h1 className="font-bold text-[6.5rem] leading-none">
+      <div className="grid grid-cols-2 mt-28 mb-4">
+        <div className="flex flex-col ml-32">
+          <h1 className="font-bold text-[4.5rem] leading-none">
             More than just shorter Links
           </h1>
-          <p className="text-slate-400 text-[2rem] mt-4">
+          <p className="text-slate-400 text-[1.4rem] mt-4">
             Build your brand's recognition and get detailed insights on how your
             links are perfoming
           </p>
