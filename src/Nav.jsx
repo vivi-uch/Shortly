@@ -2,7 +2,7 @@ import Button from "./Button";
 
 export default function Nav() {
   return (
-    <div className="flex justify-between items-center py-2  md:my-6 px-4 md:px-32 text-xs md:text-[16px]">
+    <div className="flex justify-between items-center py-2  md:my-6 px-4 md:px-32 text-xs md:text-[18px]">
       <div className="flex items-center gap-5">
         <h1 className="text-[2rem] md:text-4xl font-bold">Shortly</h1>
         <div className="hidden text-slate-400 md:flex gap-5 ml-4">
