@@ -1,7 +1,7 @@
 export default function Card({ src, name, content, mTop }) {
   return (
     <div
-      className={`relative flex flex-col bg-white pt-4 px-4 md:px-8 pb-4 rounded-lg w-full max-w-[18rem] md:max-w-[20rem] ${mTop}`}
+      className={`relative flex flex-col bg-white py-4 px-4 md:px-8 md:pb-4 rounded-lg w-full max-w-[18rem] md:max-w-[20rem] ${mTop}`}
     >
       <div className="border bg-blue-700 rounded-full p-3 md:p-4 absolute top-[-2rem]">
         <img src={src} alt={name} className="w-6 h-auto md:w-8" />

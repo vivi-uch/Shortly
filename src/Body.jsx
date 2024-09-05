@@ -7,21 +7,21 @@ export default function Body() {
       content:
         "Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.",
       src: "images/icon-brand-recognition.svg",
-      mTop: "md:transform translate-y-0",
+      mTop: "md:translate-y-0",
     },
     {
       name: "Detailed Records",
       content:
         "Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.",
       src: "images/icon-detailed-records.svg",
-      mTop: "md:transform translate-y-10",
+      mTop: "md:translate-y-10",
     },
     {
       name: "Fully customizable",
       content:
         "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.",
       src: "images/icon-fully-customizable.svg",
-      mTop: "md:transform translate-y-24",
+      mTop: "md:translate-y-24",
     },
   ];
 
@@ -38,8 +38,8 @@ export default function Body() {
       </div>
 
       <div className="relative">
-        <hr className="hidden border-green-600 md:block absolute w-full top-32 border-4"></hr>
-        <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between my-16 md:my-20 ">
+        <hr className="hidden border-green-600 md:block absolute w-full md:top-32 border-4"></hr>
+        <div className="flex flex-col items-center gap-20 md:gap-6 md:flex-row md:justify-between mt-16 md:my-20 ">
           {card.map((card) => (
             <Card
               key={card.name}
