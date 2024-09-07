@@ -61,24 +61,25 @@ export default function Nav() {
 
       {isOpen && (
         <div className="fixed inset-0 z-50">
-          <div className="absolute bg-purple-950  px-6 py-10 top-20 inset-6 rounded-md">
-            <button
+          <div className="absolute bg-purple-950 p-6 top-20 inset-6 rounded-md">
+            {/* <button
               onClick={() => setIsOpen(!isOpen)}
               className="absolute top-2 right-[1.5rem]"
             >
               ❌
-            </button>
+            </button> */}
 
             <nav className="flex flex-col gap-5 justify-center text-center text-lg text-white font-semibold">
-              <a href="#home" className="hover:text-gray-600 ">
-                Features
-              </a>
-              <a href="#new" className="hover:text-gray-600 ">
-                Pricing
-              </a>
-              <a href="#popular" className="hover:text-gray-600 ">
-                Resources
-              </a>
+              {["Features", "Pricing", "Resources"].map((item) => (
+                <a
+                  href="#home"
+                  className="hover:text-gray-600 "
+                  key={item}
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  {item}
+                </a>
+              ))}
               <hr className="bg-slate-500 opacity-25 my-0" />
               <a href="#trending" className="hover:text-gray-600 ">
                 Login

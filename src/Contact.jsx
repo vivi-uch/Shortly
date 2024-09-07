@@ -42,13 +42,13 @@ export default function Contact() {
     },
   ];
   return (
-    <div className="flex flex-col gap-10 mb-0 bg-Very-Dark-Violet justify-center py-8 items-center cursor-pointer md:flex-row md:px-32 md:py-12 md:justify-between md:items-start">
+    <div className="flex flex-col gap-10 bg-Very-Dark-Violet justify-center py-8 items-center cursor-pointer md:flex-row md:px-32 md:py-12 md:justify-between md:items-start">
       <div>
         <h1 className="text-[30px] md:text-[40px] font-bold text-white p-0 leading-none">
           Shortly
         </h1>
       </div>
-      <div className="flex flex-col text-center gap-3 md:flex-row md:gap-20 md:text-left">
+      <div className="flex flex-col text-center gap-8 md:flex-row md:gap-20 md:text-left">
         {cardList.map((card) => (
           <FooterCard
             heading={card.heading}
@@ -70,14 +70,14 @@ export default function Contact() {
 
 function FooterCard({ heading, text1, text2, text3, text4 }) {
   return (
-    <div className="flex flex-col gap-1">
-      <h3 className="text-sm mb-2 md:mb-4 text-white md:text-xl font-bold">
+    <div className="flex flex-col gap-1 text-lg text-gray-custom md:text-xl">
+      <h3 className="text-xl mb-2 md:mb-4 text-white md:text-2xl font-bold">
         {heading}
       </h3>
-      <p className="text-xs text-gray-custom md:text-lg">{text1}</p>
-      <p className="text-xs text-gray-custom md:text-lg">{text2}</p>
-      <p className="text-xs text-gray-custom md:text-lg">{text3}</p>
-      <p className="text-xs text-gray-custom md:text-lg">{text4}</p>
+      <p>{text1}</p>
+      <p>{text2}</p>
+      <p>{text3}</p>
+      <p>{text4}</p>
     </div>
   );
 }
